@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layer</title>
+    <!-- Layer adalah sebuah tumpukan u  ntuk menentukan aturan mana yang lebih penting dan mana yang tidak begitu penting, lebih 
+    cocok dan bagus ketimbang !important yang tidak dinamis -->
+    <style>
+      @layer b, a;
+      @import url(layer.css);
+      h2 {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ini Judul</h1>
+    <h2>Ini Subjudul</h2>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table dan Penggunaan Pseudo Classes</title>
+    <style>
+      table,
+      tr,
+      th,
+      td {
+        border-style: solid;
+        border-width: 0.1rem;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      th {
+        background-color: aqua;
+      }
+      .ganjil {
+        background-color: grey;
+      }
+      .genap {
+        background-color: beige;
+      }
+      table {
+        width: 15rem;
+        height: 15rem;
+      }
+      tr:hover {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Nilai</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="ganjil">
+          <td>Eko</td>
+          <td>100</td>
+        </tr>
+        <tr class="genap">
+          <td>Jupri</td>
+          <td>70</td>
+        </tr>
+        <tr class="ganjil">
+          <td>Abah</td>
+          <td>30</td>
+        </tr>
+        <tr class="genap">
+          <td>Janggar</td>
+          <td>10</td>
+        </tr>
+        <tr class="ganjil">
+          <td>Pororo</td>
+          <td>30</td>
+        </tr>
+        <tr class="genap">
+          <td>Iyan</td>
+          <td>100</td>
+        </tr>
+        <tr class="ganjil">
+          <td>Joko</td>
+          <td>100</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

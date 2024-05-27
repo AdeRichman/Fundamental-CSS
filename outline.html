@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outline</title>
+    <!-- Outline sama sekali tidak menggeser layout, berbeda dengan border. Outline berada diluar border -->
+    <style>
+      body {
+        background-color: beige;
+        padding: 0rem;
+        margin: 0rem;
+      }
+      div {
+        padding: 0rem;
+        margin: 0rem;
+        background-color: pink;
+      }
+      p {
+        padding: 0rem;
+        margin: 0rem;
+        text-align: justify;
+      }
+      .artikel1 {
+        background-color: aqua;
+        height: 10rem;
+        width: 20rem;
+        padding: 1rem 1rem 1rem 1rem;
+        margin: 1rem 1rem 1rem 1rem;
+        /* border-style: inset solid dotted dashed;
+        border-width: 0.5rem 0.5rem 0.5rem 1rem;
+        border-color: red blue yellow green;
+        border-radius: 0.1rem 1rem 1rem 0.1rem; */
+        outline: 0.3rem solid red;
+        border-radius: 1rem;
+      }
+      .artikel2 {
+        background-color: pink;
+        height: 10rem;
+        width: 14rem;
+        padding: 1rem 1rem 1rem 1rem;
+        margin: 1rem;
+        border: 0.2rem solid gray;
+        border-radius: 1rem;
+        outline: 0.1rem solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="artikel1">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
+        aspernatur numquam iure dolores voluptatum, minus nam totam quas quod,
+        quia voluptatem nihil dignissimos! Voluptates, adipisci magni aut
+        exercitationem neque cupiditate.
+      </p>
+    </div>
+    <div class="artikel2">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione
+        aspernatur numquam iure dolores voluptatum, minus nam totam quas quod,
+        quia voluptatem nihil dignissimos! Voluptates, adipisci magni aut
+        exercitationem neque cupiditate.
+      </p>
+    </div>
+  </body>
+</html>
